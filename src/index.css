@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.signin-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url("./assets//images//bg.jpg") center/cover no-repeat;
+}
+
+.overlay {
+  @apply absolute top-0 left-0 w-full h-full;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.signin-content {
+  @apply text-white text-center;
+  /* Additional styling for sign-in content */
+}
